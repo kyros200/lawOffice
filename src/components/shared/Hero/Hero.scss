@@ -1,0 +1,28 @@
+@import '../../../variables';
+
+.landing-hero-container {
+    position: relative;
+    height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient($primary-dark, $primary);
+
+    .content {
+        width: 1110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .text {
+            color: white;
+            font-size: 48px;
+
+            @media screen and (max-width: $mobile) {
+                padding: 0px 20px;
+                font-size: 36px;
+                text-align: center;
+            }
+        }
+    }
+}

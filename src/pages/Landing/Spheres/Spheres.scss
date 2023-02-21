@@ -1,0 +1,31 @@
+@import '../../../variables';
+
+.spheresTitle {
+    margin: 40px 0px;
+
+    font-size: 40px;
+    font-weight: 700;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+.spheresContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: $mobile) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .card {
+        margin-bottom: 12px;
+    }
+}
