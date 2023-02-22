@@ -17,6 +17,7 @@
         
         .left {
             background-color: $primary;
+            box-sizing: border-box;
             padding: 32px;
             >img {
                 height: 300px;
@@ -25,8 +26,10 @@
             @media screen and (max-width: $mobile) {
                 display: flex;
                 justify-content: center;
+                width: 100%;
                 >img {
                     width: 90%;
+                    max-width: 300px;
                     height: auto;
                 }   
             }

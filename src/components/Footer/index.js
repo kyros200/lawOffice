@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='footer-container'>
             <div className='content'>
                 <div className='left'>
-                    <img src={logo} />
+                    <img src={logo} alt={"Vilhena Barbosa e Associados"}/>
                 </div>
                 <div className='right'>
                     <div className='title'>

@@ -4,9 +4,9 @@ import './CardSphere.scss'
 const CardSphere = ({ icon, title, text }) => {
     return (
         <Card className='cardSphereContainer'>
-            <div className='icon'>
+            <div className='icon' aria-hidden={true}>
                 <div className='background'>
-                    <img src={icon} width={"60px"}/>
+                    <img src={icon} alt="ícone" width={"60px"}/>
                 </div>
             </div>
             <div className='title'>

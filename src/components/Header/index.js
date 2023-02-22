@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <div className='header-container'>
             <div className='content'>
-                <img src={logo} height="100px" />
+                <img src={logo} alt={"Vilhena Barbosa e Associados"} height="100px" />
                 <div className='buttons'>
                     <Link to="/">Exemplo Link</Link>
                 </div>

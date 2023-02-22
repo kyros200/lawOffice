@@ -14,7 +14,7 @@
     .knowMoreBackdrop {
         height: 100%;
         background-color: transparent;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(4px);
     
         .knowMoreContent {
             border-radius: 20px;
@@ -24,7 +24,7 @@
             background-color: rgba($primary, 0.8);
 
             @media screen and (max-width: $mobile) {
-                margin: 0px 12px;
+                margin: 0px 20px;
                 padding: 20px 12px;
             }
 
