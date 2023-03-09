@@ -5,10 +5,11 @@ html, body, .viewport {
     height: 100%;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 * {
-    font-family: 'Kufam', cursive;
+    font-family: 'Helvetica', cursive;
     font-weight: 500;
 }
 
@@ -24,4 +25,22 @@ html, body, .viewport {
 .container {
     height: 100%;
     display: flex;
+}
+
+.desktop {
+    display: inherit;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: $mobile) {
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: inherit;
+    }
 }

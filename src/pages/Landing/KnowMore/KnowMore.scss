@@ -1,72 +1,93 @@
 @import '../../../variables';
 
 .knowMoreBackground {
-    height: 500px;
-    background-image: url("./fundoKnowMore.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: $secondary;
 
     @media screen and (max-width: $mobile) {
         height: 100vh;
     }
 
-    .knowMoreBackdrop {
-        height: 100%;
-        background-color: transparent;
-        backdrop-filter: blur(4px);
-    
         .knowMoreContent {
-            border-radius: 20px;
-            padding: 20px;
             font-weight: bold;
-            border: 3px solid #f1f1f1;
-            background-color: rgba($primary, 0.8);
 
             @media screen and (max-width: $mobile) {
                 margin: 0px 20px;
-                padding: 20px 12px;
+                padding: 0px 12px;
+
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
             }
 
-            .title, .text, .buttonContainer {
+            .title, .text, .imageContainer {
                 display: flex;
                 justify-content: center;
                 text-align: center;
                 color: white;
             }
 
+            .title, .text {
+                padding: 0px calc((100vw - 1100px) /2);
+            }
+
             .title {
+                margin-top: 32px;
                 font-size: 40px;
                 font-weight: 700;
                 margin-bottom: 12px;
 
                 @media screen and (max-width: $mobile) {
-                    font-size: 30px;
+                    margin-top: 40px;
+                    // font-size: 30px;
                 }
             }
 
             .text {
                 font-size: 18px;
-                margin-bottom: 12px;
+                line-height: 24px;
+                margin-bottom: 24px;
 
                 @media screen and (max-width: $mobile) {
-                    font-size: 16px;
+                    // font-size: 16px;
                 }
             }
 
-            .buttonContainer {
-                .button {
-                    padding: 8px;
-                    border-radius: 12px;
-                    border: 2px solid white;
-                    font-size: 20px;
-                    color: white;
+            .imageContainer {
+                transform: translateX(-100vw);
+                width: 200vw;
+                height: 96px;
+                margin-bottom: 32px;
 
-                    @media screen and (max-width: $mobile) {
-                        font-size: 18px;
-                    }
+                @media screen and (max-width: $mobile) {
+                    margin-bottom: 40px;
                 }
             }
         }
+}
+
+.imageGroup {
+    // position:relative;
+    width: 100vw;
+    height: 96px;
+    display: flex;
+    justify-content: space-around;
+    animation:move 40s linear infinite;
+}
+
+.blue {
+    left:0;
+}
+
+.red {
+    left: -100vw;
+}
+  
+@keyframes move {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(100vw);
     }
 }
