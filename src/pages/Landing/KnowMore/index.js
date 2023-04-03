@@ -1,5 +1,6 @@
 import './KnowMore.scss';
 import Fade from 'react-reveal/Fade';
+import Teste from './teste.svg'
 
 const KnowMore = () => {
 
